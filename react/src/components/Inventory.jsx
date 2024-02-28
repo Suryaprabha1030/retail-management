@@ -53,7 +53,7 @@ const addData=async(e)=>{
     }
     catch(err){
         console.log("err",err)
-        toast.error("data failed to stroe",{
+        toast.error("data failed to store",{
             position: "top-center",
             autoClose:8000 })
 
