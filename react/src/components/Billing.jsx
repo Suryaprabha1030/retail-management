@@ -71,7 +71,7 @@ const removedata=(index)=>{
 
 }
 const print=()=>{
-    const billcontent=document.getElementById("bill").innerHTML
+    const billcontent=document.getElem  entById("bill").innerHTML
     const orgcontent=document.body.innerHTML
     document.body.innerHTML=billcontent
     window.print()
