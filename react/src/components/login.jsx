@@ -14,13 +14,14 @@ const Login =() => {
     const passRef=useRef()
 
     const login=async(e)=>{
+        const url=`${import.meta.env.VITE_API_BASE_URL}/api`
          e.preventDefault();
         try{
             const data={
                     name:nameRef.current.value,
                     password:passRef.current.value}
 
-        const res=await axios.post("http://127.0.0.1:8000/api/login",data)
+        const res=await axios.post(url+"/login",data)
         history('/admin')
         }
         catch(err){

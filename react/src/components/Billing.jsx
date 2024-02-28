@@ -3,6 +3,7 @@ import React, { useEffect, useRef, useState } from 'react'
  import { ToastContainer,toast } from 'react-toastify'
 
 const Billing = () => {
+    const url=`${import.meta.env.VITE_API_BASE_URL}/api`
     const nameRef=useRef()
     const qtyRef=useRef()
     const rateRef=useRef()
@@ -18,7 +19,7 @@ const Billing = () => {
     const  getcol=async(e)=>{
 
         try{
-        const res=await axios.get("http://127.0.0.1:8000/api/cols",{
+        const res=await axios.get(url+"/cols",{
             params:{
                 query:nameRef.current.value
             }
@@ -71,7 +72,7 @@ const removedata=(index)=>{
 
 }
 const print=()=>{
-    const billcontent=document.getElem  entById("bill").innerHTML
+    const billcontent=document.getElementById("bill").innerHTML
     const orgcontent=document.body.innerHTML
     document.body.innerHTML=billcontent
     window.print()

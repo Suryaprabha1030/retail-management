@@ -5,6 +5,7 @@ import { ToastContainer,toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 
 const Employ = () => {
+    const url=`${import.meta.env.VITE_API_BASE_URL}/api`
     const nameRef=useRef()
     const PasswordRef=useRef()
     const designationRef=useRef()
@@ -59,7 +60,7 @@ const Employ = () => {
     }
     e.preventDefault();
     try{
-        const res=await axios.post("http://127.0.0.1:8000/api/form",payload)
+        const res=await axios.post(url+"/form",payload)
         console.log(res.data.data)
         setUser(res.data.data)
         setloading(true)
@@ -87,7 +88,7 @@ const Employ = () => {
 // -------------read data from db----------------------
   const  getUsers=async(e)=>{
     setloading(true)
-    const res=await axios.get("http://127.0.0.1:8000/api/forms")
+    const res=await axios.get(url+"/forms")
     console.log(res.data.data)
     setUsers(res.data.data)
 
@@ -108,7 +109,7 @@ const updateRow=async(e)=>{
 
     }
 
-    const response=await axios.put("http://127.0.0.1:8000/api/forms/"+id,payload)
+    const response=await axios.put(url+"/forms/"+id,payload)
      setloading(true)
      getUsers()
      toast.success("Data updated succcessfully",{
@@ -128,7 +129,7 @@ const deldata=async(e)=>{
     try{
     e.preventDefault()
     const id=selectedData.id
-    const resp=await axios.delete("http://127.0.0.1:8000/api/forms/"+id)
+    const resp=await axios.delete(url+"/forms/"+id)
     console.log(resp)
     getUsers()
     toast.success("Data deleted succcessfully",{

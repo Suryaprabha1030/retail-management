@@ -5,6 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 const Inventory = () => {
+    const url=`${import.meta.env.VITE_API_BASE_URL}/api`
 // using useref hooks for intracting elements via ref attributes
  const nameRef=useRef();
  const companyRef=useRef();
@@ -40,7 +41,7 @@ const addData=async(e)=>{
         costPrice:costRef.current.value,
         vendorNo:numRef.current.value}
     try{
-        const res=await axios.post("http://127.0.0.1:8000/api/invents",data)
+        const res=await axios.post(url+"/invents",data)
         console.log(res.data.data)
         setLoding(true)
         toast.success("data added succesfully",{
@@ -62,7 +63,7 @@ const addData=async(e)=>{
 // read
 const getinvt=async(e)=>{
     setLoding(true)
-    const res=await axios.get("http://127.0.0.1:8000/api/invents")
+    const res=await axios.get(url+"/invents")
     setInvts(res.data.data)
     console.log(res.data.data)
 }
@@ -117,7 +118,7 @@ const updateData=async(e)=>{
         vendorNo:numRef.current.value
     }
 
-    const res=await axios.put("http://127.0.0.1:8000/api/invents/"+id,datas)
+    const res=await axios.put(url+"/invents/"+id,datas)
     setLoding(true)
     getinvt()
     toast.success("Data updated successfully",{
@@ -144,7 +145,7 @@ const updateData=async(e)=>{
 const delData=async(e)=>{
     try{
     const id=selectedData.id;
-    const res=await axios.delete("http://127.0.0.1:8000/api/invents/"+id)
+    const res=await axios.delete(url+"/invents/"+id)
     toast.success("data deleted successfully",{
         position:"top-center",
         autoClose:8000
