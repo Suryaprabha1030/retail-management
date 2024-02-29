@@ -16,6 +16,8 @@ const Billing = () => {
         total()
     },[items])
 
+
+
     const  getcol=async(e)=>{
 
         try{
@@ -62,8 +64,9 @@ const add=async(e)=>{
     }
     const res=await axios.put("http://127.0.0.1:8000/api/invents/"+id,value)
     nameRef.current.value=""
-    qtyRef.current.value=""
+    qtyRef.current.value=1
     rateRef.current.value=""
+    setQty("")
 }
 
 const removedata=(index)=>{

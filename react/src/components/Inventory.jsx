@@ -14,6 +14,7 @@ const Inventory = () => {
  const mrpRef=useRef();
  const costRef=useRef();
  const numRef=useRef();
+
 //  usestate
 const[invts,setInvts]=useState([])
 // loading
@@ -22,6 +23,7 @@ const[loading,setLoding]=useState(false)
 
 useEffect(()=>{
    getinvt();
+
 },[])
 
 // selected data using usestate

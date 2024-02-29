@@ -38,7 +38,7 @@ const Login =() => {
      <div className='w-1/3 h-1/2  flex flex-col justify-center items-center gap-5 '>
         <h1 className='font-bold text-2xl mb-10 text-center'>ADMIN LOGIN</h1>
         <input className='w-1/2 border-b-2 text-2xl border-blue-300 outline-none mb-4' ref={nameRef} placeholder='Name'/>
-        <input className='w-1/2 border-b-2 text-2xl border-blue-300 outline-none' ref={passRef} placeholder='password'/>
+        <input className='w-1/2 border-b-2 text-2xl border-blue-300 outline-none' ref={passRef} placeholder='Password'/>
         <button className='w-1/4 h-10  text-white mt-5  text-xl font-bold rounded-lg bg-red-500' onClick={login}>Login</button>
 
      </div>
