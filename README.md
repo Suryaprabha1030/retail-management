@@ -1,66 +1,32 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+**Retail Management System**
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Welcome to the Retail Management System project! This application is designed to manage various aspects of a retail business, including inventory management, sales tracking, customer management, and more. It is built using React.js for the frontend, Laravel for the backend, and MySQL for the database. Tailwind CSS is used for styling to ensure a modern and responsive user interface.
 
-## About Laravel
+**Features**
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+User Authentication: Secure user authentication system for staff members with role-based access control.
+Inventory Management: Manage inventory levels, including adding, editing, and deleting products.
+Sales Tracking: Track sales transactions, generate invoices, and manage payments.
+Customer Management: Maintain a database of customers, including contact details and purchase history.
+Reporting: Generate reports for sales, inventory, revenue, and other relevant metrics.
+Responsive Design: Responsive UI design to ensure compatibility across devices.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+**Technologies Used**
+Frontend:
+React.js: A JavaScript library for building user interfaces.
+Tailwind CSS: A utility-first CSS framework for quickly building custom designs.
+Backend:
+Laravel: A PHP web application framework for building robust web applications.
+MySQL: An open-source relational database management system.
+Other Tools:
+npm: Node Package Manager for managing project dependencies.
+Composer: Dependency Manager for PHP.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
+![retail1](https://github.com/Suryaprabha1030/retail-management/assets/149596831/11e47320-6e4a-4906-90e9-5fd5f4490514)
+![retail2](https://github.com/Suryaprabha1030/retail-management/assets/149596831/9ed2a421-cab5-41b0-8dad-ea37fec0385a)
+![retail3](https://github.com/Suryaprabha1030/retail-management/assets/149596831/553991df-02f5-4f3c-9075-bcef64132c5e)
+![retail4](https://github.com/Suryaprabha1030/retail-management/assets/149596831/d5a38132-51c5-4932-b441-5d306c64cda6)
+![retail5](https://github.com/Suryaprabha1030/retail-management/assets/149596831/70ae7315-1cc6-4f1d-ae1a-7791bfa8cd12)
+![retail6](https://github.com/Suryaprabha1030/retail-management/assets/149596831/e2a25304-a9b1-4440-aeb7-975fc5f980ac)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
